@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap absolute reference
+Sitemap: https://www.geelight.com/sitemap.xml

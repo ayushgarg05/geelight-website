@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- TECHNICAL SEO METADATA -->
+    <title>Page Not Found | Gee Lighting Technology</title>
+    <meta name="description" content="The requested page could not be found. Return to Gee Lighting Technology (GEE-LITE) homepage to explore solar lighting and LED equipment." />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#0C447C" />
+
+    <!-- STYLESHEET LINK -->
+    <link rel="stylesheet" href="/src/index.css" />
+  </head>
+  <body class="bg-white text-text-primary antialiased min-h-screen flex flex-col justify-between">
+    <!-- Skip to Content Link for Keyboard Navigation -->
+    <a href="#main_content" class="skip-link">Skip to Content</a>
+
+    <!-- GLOBAL HEADER / NAVBAR -->
+    <header class="h-20">
+      <nav class="fixed top-0 left-0 w-full z-40 bg-navy text-white py-4 transition-all duration-300" id="main_navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+          <!-- Brand Logo & Name -->
+          <a href="/index.html" class="flex items-center gap-3 group focus:ring-2 focus:ring-solar-amber focus:outline-hidden rounded-lg p-1">
+            <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center p-1 border-2 border-solar-amber shadow-sm">
+              <span class="text-navy font-black text-xs tracking-tighter">GEE</span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-base font-bold tracking-tight uppercase group-hover:text-solar-amber transition-colors">Gee Lighting</span>
+              <span class="text-[9px] text-solar-amber uppercase tracking-widest leading-none font-semibold">Technology</span>
+            </div>
+          </a>
+
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center gap-8 text-sm font-medium">
+            <a href="/index.html" class="hover:text-solar-amber transition-colors py-1 relative" data-translate-key="nav-home">Home</a>
+            <a href="/about.html" class="hover:text-solar-amber transition-colors py-1 relative" data-translate-key="nav-about">About Us</a>
+            <a href="/products.html" class="hover:text-solar-amber transition-colors py-1 relative" data-translate-key="nav-products">Products</a>
+            <a href="/contact.html" class="hover:text-solar-amber transition-colors py-1 relative" data-translate-key="nav-contact">Contact Us</a>
+          </div>
+
+          <!-- Language Widgets & Call to Action -->
+          <div class="hidden lg:flex items-center gap-4">
+            <div class="relative flex items-center bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-colors px-3 py-1.5 text-xs font-semibold text-white focus-within:ring-2 focus-within:ring-solar-amber cursor-pointer">
+              <span class="mr-1 text-white/80 select-none">Language:</span>
+              <span class="current-lang-label font-bold text-solar-amber">English</span>
+              <svg class="w-3.5 h-3.5 text-solar-amber ml-1.5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+              <select class="custom-lang-select absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" aria-label="Select Language">
+                <option value="en" class="text-navy bg-white">English</option>
+                <option value="hi" class="text-navy bg-white">हिन्दी</option>
+                <option value="ne" class="text-navy bg-white">नेपाली</option>
+                <option value="es" class="text-navy bg-white">Español</option>
+                <option value="fr" class="text-navy bg-white">Français</option>
+                <option value="ar" class="text-navy bg-white">العربية</option>
+              </select>
+            </div>
+            <!-- Keep Google Translate target element in DOM, but visually hidden -->
+            <div id="google_translate_element" class="sr-only" aria-hidden="true"></div>
+          </div>
+
+          <!-- Mobile Actions -->
+          <div class="flex items-center gap-2 lg:hidden">
+            <div class="relative flex items-center bg-white/10 hover:bg-white/20 rounded-lg border border-white/20 transition-colors px-2.5 py-1.5 text-xs font-semibold text-white focus-within:ring-2 focus-within:ring-solar-amber cursor-pointer">
+              <span class="mr-1 text-white/80 select-none">Language:</span>
+              <span class="current-lang-label font-bold text-solar-amber">English</span>
+              <svg class="w-3.5 h-3.5 text-solar-amber ml-1.5 pointer-events-none" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+              <select class="custom-lang-select absolute inset-0 w-full h-full opacity-0 cursor-pointer z-10" aria-label="Select Language">
+                <option value="en" class="text-navy bg-white">English</option>
+                <option value="hi" class="text-navy bg-white">हिन्दी</option>
+                <option value="ne" class="text-navy bg-white">नेपाली</option>
+                <option value="es" class="text-navy bg-white">Español</option>
+                <option value="fr" class="text-navy bg-white">Français</option>
+                <option value="ar" class="text-navy bg-white">العربية</option>
+              </select>
+            </div>
+            <button id="mobile_menu_btn" class="p-2 text-white hover:text-solar-amber transition-colors cursor-pointer" aria-expanded="false" aria-label="Toggle Navigation Menu">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile_menu" class="hidden lg:hidden bg-dark-navy border-t border-white/10 mt-2 px-4 py-4 space-y-3">
+          <a href="/index.html" class="block text-white hover:text-solar-amber font-medium py-1.5" data-translate-key="nav-home">Home</a>
+          <a href="/about.html" class="block text-white hover:text-solar-amber font-medium py-1.5" data-translate-key="nav-about">About Us</a>
+          <a href="/products.html" class="block text-white hover:text-solar-amber font-medium py-1.5" data-translate-key="nav-products">Products</a>
+          <a href="/contact.html" class="block text-white hover:text-solar-amber font-medium py-1.5" data-translate-key="nav-contact">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN PAGE CONTAINER -->
+    <main id="main_content" class="flex-1 flex items-center justify-center py-20 bg-gray-50">
+      <div class="max-w-md w-full mx-auto px-4 text-center">
+        <!-- Giant light bulb graphics/icon -->
+        <div class="w-24 h-24 bg-solar-amber/10 text-solar-amber rounded-full flex items-center justify-center mx-auto mb-8 animate-pulse">
+          <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          </svg>
+        </div>
+
+        <h1 class="text-4xl font-black text-navy tracking-tight mb-4">404 - Off Grid</h1>
+        <p class="text-sm text-text-muted mb-8 leading-relaxed">
+          The page you are looking for has either gone off-grid or is currently undergoing technical service. Let us guide you back to light.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/index.html" class="inline-flex items-center justify-center bg-navy hover:bg-dark-navy text-white font-bold text-xs py-3 px-6 rounded-lg shadow-sm transition-all">
+            Return to Home
+          </a>
+          <a href="/products.html" class="inline-flex items-center justify-center border border-gray-300 bg-white hover:bg-gray-50 text-navy font-bold text-xs py-3 px-6 rounded-lg transition-all">
+            Explore Solar Products
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-dark-navy text-white pt-16 pb-8 border-t border-white/5">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-12 border-b border-white/5">
+        <div class="flex flex-col items-start">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-9 h-9 rounded-full bg-white flex items-center justify-center p-1 border-2 border-solar-amber">
+              <span class="text-navy font-black text-xs tracking-tighter">GEE</span>
+            </div>
+            <span class="text-base font-bold uppercase tracking-tight text-white" data-translate-key="footer-about-title">Gee Lighting Technology</span>
+          </div>
+          <p class="text-xs text-gray-400 leading-relaxed mb-6" data-translate-key="footer-about-desc">
+            Pioneering clean, dependable, and affordable solar power systems and LED bulbs under the GEE-LITE label. Proudly serving dealers since 2005.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-solar-amber mb-4" data-translate-key="footer-links-title">Quick Navigation</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="/index.html" class="hover:text-solar-amber transition-colors">Home</a></li>
+            <li><a href="/about.html" class="hover:text-solar-amber transition-colors">About Us</a></li>
+            <li><a href="/products.html" class="hover:text-solar-amber transition-colors">Product Catalogue</a></li>
+            <li><a href="/contact.html" class="hover:text-solar-amber transition-colors">Dealer Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-solar-amber mb-4" data-translate-key="footer-categories-title">Product Segments</h4>
+          <ul class="space-y-2.5 text-xs text-gray-400">
+            <li><a href="/products.html?category=Solar%20Lanterns" class="hover:text-solar-amber transition-colors">Solar Lanterns</a></li>
+            <li><a href="/products.html?category=Torches" class="hover:text-solar-amber transition-colors">Rechargeable Torches</a></li>
+            <li><a href="/products.html?category=Solar%20Systems" class="hover:text-solar-amber transition-colors">Solar Kits & UPS</a></li>
+            <li><a href="/products.html?category=Bulbs%20%26%20Lamps" class="hover:text-solar-amber transition-colors">Inverter bulbs & DC Bulbs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-solar-amber mb-4" data-translate-key="footer-contact-title">Corporate Office</h4>
+          <ul class="space-y-3 text-xs text-gray-400">
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-solar-amber shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+              <span>New Delhi, India (MSME Registered Unit)</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-4 h-4 text-solar-amber shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8m-2 11H4a2 2 0 01-2-2V7a2 2 0 012-2h16a2 2 0 012 2v10a2 2 0 01-2 2z" /></svg>
+              <a href="mailto:geelightingtechnology@gmail.com" class="hover:text-solar-amber transition-all">geelightingtechnology@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="text-[11px] text-gray-500 text-center sm:text-left" data-translate-key="footer-copyright">
+          © 2005–2026 Gee Lighting Technology (GEE-LITE). All rights reserved. Registered MSME / ISO 9001:2015 certified manufacturer.
+        </p>
+      </div>
+    </footer>
+
+    <!-- INJECT DYNAMIC GOOGLE TRANSLATE ENGINE -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'en',
+          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit" defer></script>
+
+    <!-- MAIN APP CODE -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

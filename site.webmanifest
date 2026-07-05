@@ -1,0 +1,21 @@
+{
+  "name": "Gee Lighting Technology",
+  "short_name": "GEE-LITE",
+  "description": "Premium solar and LED lighting equipment manufacturer in New Delhi.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0C447C",
+  "theme_color": "#0C447C",
+  "icons": [
+    {
+      "src": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=192&h=192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=512&h=512",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
