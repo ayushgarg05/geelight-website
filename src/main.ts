@@ -30,79 +30,505 @@ interface Product {
   image: string;
   alt: string;
   isNew?: boolean;
+  isComingSoon?: boolean;
 }
 
 const PRODUCTS: Product[] = [
-  // SOLAR LANTERNS
+  // 1. TORCHES & SEARCHLIGHTS (Page 2 to 11)
   {
-    model: "GL-29",
-    name: "Solar Lantern GL-29",
-    category: "Solar Lanterns",
-    specs: ["Dual Charging: Solar & AC", "High-capacity LFP Battery", "10+ Hours backup time", "Mobile charging USB port"],
-    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-29 rechargeable heavy-duty solar lantern",
+    model: "GL-37",
+    name: "LED Rechargeable Torch GL-37",
+    category: "Torches",
+    specs: [
+      "3W High Power LED with 55mm Reflector",
+      "3600 mAh High Power Lithium Battery",
+      "Type-C charging & full battery auto cut-off",
+      "Up to 1 Km bright light focus",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-37 rechargeable heavy-duty LED torch",
     isNew: true
   },
   {
-    model: "GL-28",
-    name: "Solar Lantern GL-28",
-    category: "Solar Lanterns",
-    specs: ["Sleek lightweight design", "Bright 360-degree illumination", "Built-in Solar panel", "8 Hours backup time"],
-    image: "https://images.unsplash.com/photo-1507646227500-4d389b0012be?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-28 rechargeable solar lantern"
-  },
-  {
-    model: "GL-28M",
-    name: "Mini LED Lantern GL-28M",
-    category: "Solar Lanterns",
-    specs: ["Ultra-compact pocket size", "Multi-step brightness control", "Rechargeable via micro-USB", "Shatterproof housing"],
-    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-28M mini LED lantern"
-  },
-
-  // TORCHES
-  {
-    model: "GL-7",
-    name: "LED Rechargeable Torch GL-7",
+    model: "GL-7 Plus",
+    name: "LED Rechargeable Torch GL-7 Plus",
     category: "Torches",
-    specs: ["Long-range focus (up to 500m)", "Heavy-duty ABS body", "Lithium-ion rechargeable battery", "Dual mode: High/Low beam"],
+    specs: [
+      "High power 4V/4.5Ah lead-acid battery",
+      "Front Light Back-Up up to 8 Hours",
+      "Side Emergency Light Back-up up to 8 Hours",
+      "Up to 1 Km long and bright focus",
+      "55mm high-efficiency reflector",
+      "6 Months Warranty | Made in India"
+    ],
     image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-7 long-range rechargeable flashlight"
+    alt: "GEE-LITE GL-7 Plus rechargeable side light torch",
+    isNew: true
   },
   {
-    model: "GL-14",
-    name: "Kisan Torch GL-14",
+    model: "GL-27",
+    name: "LED Rechargeable Torch GL-27",
     category: "Torches",
-    specs: ["Designed for farming environments", "Super powerful searchlight beam", "Side emergency tube-light", "Corrosion-proof build"],
-    image: "https://images.unsplash.com/photo-1534224039826-c7a0dea0e66a?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-14 Kisan high-power flashlight"
+    specs: [
+      "4V/4.5Ah High Power Battery",
+      "Front Light Back-Up up to 8 Hours",
+      "Side Emergency Light Back-up up to 8 Hours",
+      "Up to 1 Km long and bright focus",
+      "Compatible with 4W/6V Solar Panel",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-27 rechargeable solar-compatible torch"
+  },
+  {
+    model: "GL-47",
+    name: "LED Rechargeable Torch GL-47",
+    category: "Torches",
+    specs: [
+      "4V/4.5Ah High Power Battery",
+      "Front Light Back-Up up to 8 Hours",
+      "Side Emergency Light Back-up up to 8 Hours",
+      "Up to 1 Km long and bright focus",
+      "Compatible with 4W/6V Solar Panel",
+      "Wider 68mm reflector head",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-47 large reflector rechargeable torch"
+  },
+  {
+    model: "GL-21",
+    name: "Heavy-Duty Searchlight GL-21",
+    category: "Torches",
+    specs: [
+      "Heavy-duty 4V/7Ah high power battery",
+      "Front Light High Mode Back-Up: 8-9 Hours",
+      "Front Light Low Mode Back-up: 15-16 Hours",
+      "Side Emergency Light Back-up up to 10 Hours",
+      "Up to 1 Km long and bright focus",
+      "Large 82mm high-dispersion reflector",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-21 heavy-duty rechargeable searchlight"
+  },
+  {
+    model: "GL-55",
+    name: "Rechargeable Searchlight GL-55",
+    category: "Torches",
+    specs: [
+      "Ultra-durable 4V/7Ah high capacity battery",
+      "Front Light High: 8-9h / Low Mode: 15-16h Backup",
+      "Side Emergency Light Back-up: 9-10 Hours",
+      "Extreme 1.5 Km long and bright focus",
+      "Built-in USB port for Smartphone Charging",
+      "80mm professional grade reflector",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-55 power bank searchlight"
+  },
+  {
+    model: "GL-56",
+    name: "Rechargeable Lantern & Torch GL-56",
+    category: "Torches",
+    specs: [
+      "4V/4.5Ah High Power Battery",
+      "Front Light High Mode: 6-7h / Low Mode: 12-13h Backup",
+      "Side Emergency Light Back-up: 6-7 Hours",
+      "1 Km long focus with Blinking Mode safety feature",
+      "Dual Switch for extra operational life",
+      "Full & Low battery automatic cut-off protection",
+      "80mm custom reflector bezel",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-56 heavy-duty dual switch lantern torch"
+  },
+  {
+    model: "GL-97",
+    name: "Rechargeable LiFePO4 Torch GL-97",
+    category: "Torches",
+    specs: [
+      "6000 mAh high capacity rechargeable LiFePO4 battery",
+      "Front Light High Mode: 6-7h / Low Mode: 20-24h Backup",
+      "Side Emergency Light Back-up: 6-7 Hours",
+      "Up to 1 Km long and bright focus",
+      "Compatible with 4W/6V solar panel",
+      "Full and low battery auto cut-off circuit",
+      "97mm ultra-wide reflector head",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-97 long-life LiFePO4 rechargeable torch"
+  },
+  {
+    model: "GL-110",
+    name: "Super Long-Range Torch GL-110",
+    category: "Torches",
+    specs: [
+      "3.7V/7.8Ah High Capacity Lithium Battery",
+      "Front Light High Mode: 8-9h / Low Mode: 15-16h Backup",
+      "Extreme long range focus up to 2 Km",
+      "Massive 110mm heavy-duty reflector head",
+      "Lightweight ergonomics with professional grip",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-110 extreme 2km long range torch"
+  },
+  {
+    model: "GL-660",
+    name: "Heavy-Duty Searchlight GL-660",
+    category: "Torches",
+    specs: [
+      "High capacity 4V/8Ah high power battery",
+      "Front Light High Mode: 8-9h / Low Mode: 15-16h Backup",
+      "Side Emergency Light Back-up: 9-10 Hours",
+      "1.5 Km long and bright focus with Blinking Mode",
+      "Dual Switch for extra life & automated cut-off protection",
+      "Ribbed ultra-rugged construction with 110mm reflector",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-660 heavy-duty searchlight lantern"
   },
 
-  // SOLAR SYSTEMS
+  // 2. POCKET & TACTICAL FLASH-LIGHTS (Page 12 to 15)
+  {
+    model: "GL-33",
+    name: "Pocket Zoom Penlight GL-33",
+    category: "Torches",
+    specs: [
+      "500 mAh built-in Lithium Battery",
+      "Telescopic zoom up to 300 Meters focus",
+      "Up to 3 Hours continuous lighting backup",
+      "Modern Type-C charging interface",
+      "Ideal for camping, security, farming, and power cuts",
+      "Ultra-compact pocket design in high-finish Teal"
+    ],
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-33 pocket telescopic zoom teal flashlight"
+  },
+  {
+    model: "GL-30",
+    name: "Pocket Zoom Flashlight GL-30",
+    category: "Torches",
+    specs: [
+      "500 mAh rechargeable Lithium Battery",
+      "Telescopic zoom and Type-C fast charging",
+      "Up to 5 Hours continuous lighting backup",
+      "Sleek cylindrical pastel design with grey accents",
+      "Flicker-free micro-LED illumination"
+    ],
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-30 sleek pink pocket penlight"
+  },
+  {
+    model: "GL-36",
+    name: "Aluminium Tactical Torch GL-36",
+    category: "Torches",
+    specs: [
+      "1200 mAh High Capacity Lithium Battery",
+      "Telescopic zoom with 200 Meters bright focus",
+      "5 Lighting modes: High, Low, Flashing, Side Light, Side Light Flashing",
+      "Unbreakable lightweight Aluminium body with waterproof switch",
+      "Type-C charging & sturdy orange utility ring clip"
+    ],
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-36 rechargeable aluminium tactical flashlight"
+  },
+  {
+    model: "GL-38",
+    name: "Tactical Zoom Torch GL-38",
+    category: "Torches",
+    specs: [
+      "1200 mAh High Capacity Lithium Battery",
+      "Telescopic zoom with up to 300 Meters focus range",
+      "5 Lighting modes: High, Low, Flashing, Side Light, Side Light Flashing",
+      "Type-C charging & rugged gunmetal grey aluminium body",
+      "Ideal for mining, farming, security, and outdoor camping"
+    ],
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-38 tactical zoom aluminium flashlight"
+  },
+
+  // 3. MINING & FARMING HEADLAMPS (Page 16 to 18)
+  {
+    model: "GL-31",
+    name: "Telescopic Headlamp GL-31",
+    category: "Torches",
+    specs: [
+      "3.7V/1200 mAh Lithium Battery",
+      "High Mode: 3-4 Hours / Low Mode: 7-8 Hours backup",
+      "Telescopic zoom focus adjustment",
+      "Fully waterproof toggle switch",
+      "Ideal for mining, farming, and power outages",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-31 rechargeable mining headlamp"
+  },
+  {
+    model: "GL-22",
+    name: "Protected Headlamp GL-22",
+    category: "Torches",
+    specs: [
+      "3.7V/2200 mAh Lithium Battery with IP41 protection",
+      "High Mode: 4-5 Hours / Low Mode: 10-11 Hours backup",
+      "Up to 300 Meters focus range",
+      "Dual Charging: 5 Hours via Solar panel or 4 Hours via AC220V",
+      "IC Controlled overcharging and over-discharging protection",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-22 IP41 protected headlamp"
+  },
+  {
+    model: "GL-34",
+    name: "CREE LED Headlamp GL-34",
+    category: "Torches",
+    specs: [
+      "High power 3.7V/4000 mAh Lithium Battery",
+      "10W genuine high-dispersion CREE LED Reflector",
+      "High Mode: 4-5 Hours / Low Mode: 10-11 Hours backup",
+      "Focus reach up to 300 Meters",
+      "Best-in-class comfort straps for mining & agricultural use",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-34 10W CREE headlamp"
+  },
+
+  // 4. SOLAR POWER SYSTEMS & LIGHT KITS (Page 19 to 22)
   {
     model: "GL-13",
     name: "Solar Power Bank GL-13",
     category: "Solar Systems",
-    specs: ["10,000mAh durable battery", "Built-in high-grade solar cells", "Dual USB charging outputs", "LED emergency light panel"],
+    specs: [
+      "3.7V/2200 mAh durable Lithium Battery",
+      "12 Pcs of High Brightness LEDs built into the chassis",
+      "All types of smartphone charging via USB (500mA speed)",
+      "Solar Charging: 6 Hours from panel, AC Charging: 4 Hours",
+      "High Mode: 3-4 Hours / Low Mode: 7-8 Hours backup",
+      "Overcharging and overdischarging protection circuit",
+      "1 Year Warranty | India's No. 1 Solar Lighting Product"
+    ],
     image: "https://images.unsplash.com/photo-1609592424109-dd778844869c?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-13 solar power bank with panel"
-  },
-  {
-    model: "GL-10",
-    name: "Solar Energy Kit GL-10",
-    category: "Solar Systems",
-    specs: ["Heavy-duty solar panel included", "Powers 3 DC Bulbs + Mobile charging", "Wall-mountable central unit", "LFP battery longevity"],
-    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-10 multi-room solar home lighting system"
+    alt: "GEE-LITE GL-13 solar power bank with built-in led panel"
   },
   {
     model: "GL-20",
-    name: "Solar Mini Energy Kit GL-20",
+    name: "Solar Hanging Bulb Kit GL-20",
     category: "Solar Systems",
-    specs: ["Compact portable controller", "Supports 2 external LED lamps", "Easy plug-and-play installation", "Affordable backup solution"],
-    image: "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-20 portable solar energy kit"
+    specs: [
+      "High capacity 3.7V/4400 mAh Lithium Battery",
+      "Two 3W high brightness rain-proof hanging bulbs included",
+      "Smart USB port for charging all smartphones",
+      "Solar Charging: 10 Hours from solar panel / Adapter: 7 Hours",
+      "High Quality IC-based controller with full overcharge protection",
+      "14/40 copper 2-core heavy-duty wiring (3.5mm OD)",
+      "1 Year Warranty | India's No. 1 Solar Lighting Product"
+    ],
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-20 solar hanging bulb kit"
   },
+  {
+    model: "GL-10",
+    name: "Solar Home System Kit GL-10",
+    category: "Solar Systems",
+    specs: [
+      "Heavy duty 3.7V/5200 mAh Lithium Battery",
+      "Three 2W high brightness rain-proof hanging bulbs included",
+      "All types of smartphone charging by USB",
+      "Solar Charging: 6 Hours from 6W solar panel / Adapter: 8 Hours",
+      "Overcharge and overdischarge electronic protection",
+      "Backup: 1 Bulb up to 15h, 2 Bulbs up to 8h, 3 Bulbs up to 6h",
+      "1 Year Warranty | India's No. 1 Solar Lighting Product"
+    ],
+    image: "https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-10 solar energy kit with 3 bulbs"
+  },
+  {
+    model: "GL-29",
+    name: "Solar Dome Lantern GL-29",
+    category: "Solar Lanterns",
+    specs: [
+      "Heavy-duty 6V 5Ah high power battery",
+      "10 Pcs of 1W high efficacy 3030 SMD Epistar chip LEDs (3W total)",
+      "High Mode: 9-10 Hours / Low Mode: 18-20 Hours backup",
+      "Mobile charging USB out & fully IP41 protected structure",
+      "AC Adaptor or Solar panel charging time: 10 Hours",
+      "6 Months Warranty | Made in India"
+    ],
+    image: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-29 solar dome lantern with epistar chips"
+  },
+
+  // 5. BATTERY CHARGERS & SMPS SUPPLIES (Page 23 to 27)
+  {
+    model: "AD-4",
+    name: "4-Volt Battery Charger AD-4",
+    category: "Chargers",
+    specs: [
+      "4 Volt Battery Charger with status LED indicator",
+      "Wide Input range: 110-240V AC 50-60 Hz",
+      "Output capacity: 5.5V DC 1 Amp",
+      "Short Circuit & Overload auto-protection circuitry",
+      "High efficiency SMPS system with very low idle energy draw",
+      "Superior robust housing with durable copper cabling"
+    ],
+    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE AD-4 4 volt smart battery charger",
+    isNew: true
+  },
+  {
+    model: "AD-6",
+    name: "6-Volt Battery Charger AD-6",
+    category: "Chargers",
+    specs: [
+      "6 Volt Battery Charger with status LED indicator",
+      "Wide Input range: 110-240V AC 50-60 Hz",
+      "Output capacity: 7.6V DC 1 Amp",
+      "Short Circuit & Overload auto-protection circuitry",
+      "High efficiency & low standby energy consumption",
+      "Manufactured in state-of-the-art facility in New Delhi"
+    ],
+    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE AD-6 6 volt smart battery charger",
+    isNew: true
+  },
+  {
+    model: "AD-12 (2.1)",
+    name: "Dynamic SMPS Charger AD-12 (2.1)",
+    category: "Chargers",
+    specs: [
+      "Highly integrated robust SMPS power supply",
+      "Input voltage threshold: 110-260V AC 50-60Hz",
+      "Automated output short circuit shutdown protection",
+      "Automated output overload & over-current protection",
+      "Premium heat-safe casing with continuous power flow"
+    ],
+    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE AD-12 2.1 SMPS charger unit"
+  },
+  {
+    model: "AD-12 Jhatka",
+    name: "Jhatka Machine Charger AD-12",
+    category: "Chargers",
+    specs: [
+      "Specially designed for agricultural Jhatka Fencing Machines",
+      "Input voltage safety range: 110-260V AC 50-60Hz",
+      "Built-in Reverse Polarity electronic protection",
+      "Output short circuit & current surge protection",
+      "Rugged heavy-duty dual pin standard socket plugs"
+    ],
+    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE AD-12 jhatka machine safety fence charger"
+  },
+  {
+    model: "AD-12 Chimti",
+    name: "Chimti Battery Charger AD-12",
+    category: "Chargers",
+    specs: [
+      "Equipped with heavy-duty red & black alligator Chimti clips",
+      "Input voltage flexibility: 110-260V AC 50-60Hz",
+      "Advanced reverse polarity clamp protection",
+      "Output short circuit protection with status indicators",
+      "Heavy gauge copper clamps for solid contact surface"
+    ],
+    image: "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE AD-12 chimti alligator clip charger"
+  },
+
+  // 6. COMING SOON - PREVIEW IN CATALOG (Page 28)
+  {
+    model: "GL-39",
+    name: "Next-Gen Zoom Torch GL-39",
+    category: "Torches",
+    specs: [
+      "High-power CREE LED spotlight with premium amber collar",
+      "Dynamic telescopic focus bezel with orange accent",
+      "Heavy-duty LiFePO4 battery integration",
+      "Coming Soon in Q3 2026 - Registered Dealer priority"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-39 coming soon spotlight torch",
+    isComingSoon: true
+  },
+  {
+    model: "GL-40",
+    name: "High-Speed Zoom Torch GL-40",
+    category: "Torches",
+    specs: [
+      "Sleek silver metallic frame with high-efficiency side light bar",
+      "Double light source with zoom spotlight + ambient lantern mode",
+      "Fast Type-C rechargeable smart circuit board",
+      "Coming Soon in Q3 2026 - Registered Dealer priority"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-40 coming soon silver penlight torch",
+    isComingSoon: true
+  },
+  {
+    model: "GL-48",
+    name: "Slim Utility Handy-Light GL-48",
+    category: "Torches",
+    specs: [
+      "Flat pocket design in high-visibility Solar Yellow",
+      "Multi-core SMD LED array for flood lighting",
+      "Magnetic base + sturdy utility hanger hook",
+      "Coming Soon in Q3 2026 - Registered Dealer priority"
+    ],
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-48 coming soon yellow handy pocket light",
+    isComingSoon: true
+  },
+  {
+    model: "GL-49",
+    name: "Handy COB Work-Light GL-49",
+    category: "Torches",
+    specs: [
+      "Tactical rubberized black body with orange power switch",
+      "Dual core zoom lens + ultra-wide COB side light board",
+      "Heavy-duty utility clip and USB charging port",
+      "Coming Soon in Q3 2026 - Registered Dealer priority"
+    ],
+    image: "https://images.unsplash.com/photo-1555138136-1e968393fa18?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-49 coming soon black COB worklight",
+    isComingSoon: true
+  },
+  {
+    model: "GL-50",
+    name: "Tactical Metal Flashlight GL-50",
+    category: "Torches",
+    specs: [
+      "Indestructible knurled aircraft-grade aluminium alloy body",
+      "Extreme throw focus projector with dual switch mode",
+      "Waterproof, shockproof design with crenellated bezel",
+      "Coming Soon in Q3 2026 - Registered Dealer priority"
+    ],
+    image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-50 coming soon tactical metal flashlight",
+    isComingSoon: true
+  },
+  {
+    model: "GL-165",
+    name: "Multipurpose COB Headlamp GL-165",
+    category: "Torches",
+    specs: [
+      "Wearable lightweight design with secondary side stick COB LED",
+      "High-power zoom spotlight for precise distance lighting",
+      "Ideal for industrial mining, underground repair & farming",
+      "Coming Soon in Q3 2026 - Registered Dealer priority"
+    ],
+    image: "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?auto=format&fit=crop&q=80&w=600",
+    alt: "GEE-LITE GL-165 coming soon multi headlamp",
+    isComingSoon: true
+  },
+
+  // 7. OTHER RELEVANT GEE-LIGHTING SOLUTIONS
   {
     model: "GL-9",
     name: "Solar Home System GL-9",
@@ -117,8 +543,7 @@ const PRODUCTS: Product[] = [
     category: "Solar Systems",
     specs: ["Includes premium DC Pedestal Fan", "3 LED bulbs + Mobile USB charger", "12V LFP battery pack", "Fully grid-independent"],
     image: "https://images.unsplash.com/photo-1618944847023-38aa001235f0?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-9F solar home kit with DC fan",
-    isNew: true
+    alt: "GEE-LITE GL-9F solar home kit with DC fan"
   },
   {
     model: "GL-9T",
@@ -126,8 +551,7 @@ const PRODUCTS: Product[] = [
     category: "Solar Systems",
     specs: ["Includes low-power 12V LED TV", "Complete solar charging setup", "Superb backup performance", "Perfect for rural/remote homes"],
     image: "https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-9T solar home kit with TV",
-    isNew: true
+    alt: "GEE-LITE GL-9T solar home kit with TV"
   },
   {
     model: "Solar UPS",
@@ -137,8 +561,6 @@ const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1620283085439-39620a1e21c4?auto=format&fit=crop&q=80&w=600",
     alt: "GEE-LITE hybrid solar inverter UPS for home backup"
   },
-
-  // BULBS & LAMPS
   {
     model: "GL-11",
     name: "LED Lamp GL-11",
@@ -185,8 +607,7 @@ const PRODUCTS: Product[] = [
     category: "Bulbs & Lamps",
     specs: ["Special internal reflector dome", "Extra-wide lighting angle", "Premium cooling system", "Ideal for reading and studying"],
     image: "https://images.unsplash.com/photo-1513506003901-1e6a229e2d15?auto=format&fit=crop&q=80&w=600",
-    alt: "GEE-LITE GL-1 reflector R-Bulb",
-    isNew: true
+    alt: "GEE-LITE GL-1 reflector R-Bulb"
   },
   {
     model: "GL-2",
@@ -196,8 +617,6 @@ const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=600",
     alt: "GEE-LITE GL-2 rechargeable study desk lamp"
   },
-
-  // TUBES
   {
     model: "Tube 12V",
     name: "Tube 12V DC (3W/5W/7W)",
@@ -206,8 +625,6 @@ const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&q=80&w=600",
     alt: "GEE-LITE 12V DC linear tube light series"
   },
-
-  // FANS
   {
     model: "GL-15",
     name: "BLDC Ceiling Fan GL-15",
@@ -224,8 +641,6 @@ const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1618944847023-38aa001235f0?auto=format&fit=crop&q=80&w=600",
     alt: "GEE-LITE DC 12V high speed portable fan line"
   },
-
-  // STREET LIGHT
   {
     model: "GL-16",
     name: "Semi-Integrated Street Light GL-16",
@@ -234,8 +649,6 @@ const PRODUCTS: Product[] = [
     image: "https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?auto=format&fit=crop&q=80&w=600",
     alt: "GEE-LITE GL-16 outdoor solar street light"
   },
-
-  // INVERTERS
   {
     model: "GL-8",
     name: "CFL Inverter GL-8",
@@ -432,6 +845,7 @@ const PRODUCT_TRANSLATIONS: Record<string, string> = {
   "Fans": "पंखे",
   "Street Lights": "स्ट्रीट लाइट्स",
   "Inverters": "इन्वर्टर",
+  "Chargers": "चार्जर",
 
   // Product Names
   "Solar Lantern GL-29": "सोलर लालटेन GL-29",
@@ -555,7 +969,182 @@ const PRODUCT_TRANSLATIONS: Record<string, string> = {
   "Compact lightweight inverter unit": "कॉम्पैक्ट और हल्का इन्वर्टर यूनिट",
   "Supports CFL and low-wattage LEDs": "सीएफएल और कम-वाट एलईडी का समर्थन",
   "Overload & short-circuit auto cutout": "ओवरलोड और शॉर्ट-सर्किट ऑटो कटआउट",
-  "Great battery utility ratio": "उत्कृष्ट बैटरी उपयोग अनुपात"
+  "Great battery utility ratio": "उत्कृष्ट बैटरी उपयोग अनुपात",
+
+  // New Products Names and Specs
+  "LED Rechargeable Torch GL-37": "एलईडी रिचार्जेबल टॉर्च GL-37",
+  "LED Rechargeable Torch GL-7 Plus": "एलईडी रिचार्जेबल टॉर्च GL-7 प्लस",
+  "LED Rechargeable Torch GL-27": "एलईडी रिचार्जेबल टॉर्च GL-27",
+  "LED Rechargeable Torch GL-47": "एलईडी रिचार्जेबल टॉर्च GL-47",
+  "Heavy-Duty Searchlight GL-21": "हैवी-ड्यूटी सर्चलाइट GL-21",
+  "Rechargeable Searchlight GL-55": "रिचार्जेबल सर्चलाइट GL-55",
+  "Rechargeable Lantern & Torch GL-56": "रिचार्जेबल लालटेन और टॉर्च GL-56",
+  "Rechargeable LiFePO4 Torch GL-97": "रिचार्जेबल LiFePO4 टॉर्च GL-97",
+  "Super Long-Range Torch GL-110": "सुपर लॉन्ग-रेंज टॉर्च GL-110",
+  "Heavy-Duty Searchlight GL-660": "हैवी-ड्यूटी सर्चलाइट GL-660",
+  "Pocket Zoom Penlight GL-33": "पॉकेट ज़ूम पेनलाइट GL-33",
+  "Pocket Zoom Flashlight GL-30": "पॉकेट ज़ूम फ्लैशलाइट GL-30",
+  "Aluminium Tactical Torch GL-36": "एल्युमिनियम टैक्टिकल टॉर्च GL-36",
+  "Tactical Zoom Torch GL-38": "टैक्टिकल ज़ूम टॉर्च GL-38",
+  "Telescopic Headlamp GL-31": "टेलीस्कोपिक हेडलैंप GL-31",
+  "Protected Headlamp GL-22": "प्रोटेक्टेड हेडलैंप GL-22",
+  "CREE LED Headlamp GL-34": "क्री (CREE) एलईडी हेडलैंप GL-34",
+  "Solar Hanging Bulb Kit GL-20": "सोलर हैंगिंग बल्ब किट GL-20",
+  "Solar Home System Kit GL-10": "सोलर होम सिस्टम किट GL-10",
+  "Solar Dome Lantern GL-29": "सोलर डोम लालटेन GL-29",
+  "4-Volt Battery Charger AD-4": "4-वोल्ट बैटरी चार्जर AD-4",
+  "6-Volt Battery Charger AD-6": "6-वोल्ट बैटरी चार्जर AD-6",
+  "Dynamic SMPS Charger AD-12 (2.1)": "डायनेमिक एसएमपीएस चार्जर AD-12 (2.1)",
+  "Jhatka Machine Charger AD-12": "झटका मशीन चार्जर AD-12",
+  "Chimti Battery Charger AD-12": "चिमटी बैटरी चार्जर AD-12",
+  "Next-Gen Zoom Torch GL-39": "नेक्स्ट-जेन ज़ूम टॉर्च GL-39",
+  "High-Speed Zoom Torch GL-40": "हाई-स्पीड ज़ूम टॉर्च GL-40",
+  "Slim Utility Handy-Light GL-48": "स्लिम यूटिलिटी हैंडी-लाइट GL-48",
+  "Handy COB Work-Light GL-49": "हैंडी सीओबी (COB) वर्क-लाइट GL-49",
+  "Tactical Metal Flashlight GL-50": "टैक्टिकल मेटल फ्लैशलाइट GL-50",
+  "Multipurpose COB Headlamp GL-165": "मल्टीपर्पस सीओबी (COB) हेडलैंप GL-165",
+
+  "3W High Power LED with 55mm Reflector": "55mm रिफ्लेक्टर के साथ 3W हाई पावर एलईडी",
+  "3600 mAh High Power Lithium Battery": "3600 mAh हाई पावर लिथियम बैटरी",
+  "Type-C charging & full battery auto cut-off": "टाइप-सी चार्जिंग और फुल बैटरी ऑटो कट-ऑफ",
+  "Up to 1 Km bright light focus": "1 किलोमीटर तक चमकदार लाइट फोकस",
+  "6 Months Warranty | Made in India": "6 महीने की वारंटी | भारत में निर्मित",
+  "High power 4V/4.5Ah lead-acid battery": "हाई पावर 4V/4.5Ah लीड-एसिड बैटरी",
+  "Front Light Back-Up up to 8 Hours": "सामने की लाइट का बैकअप 8 घंटे तक",
+  "Side Emergency Light Back-up up to 8 Hours": "साइड इमरजेंसी लाइट का बैकअप 8 घंटे तक",
+  "Up to 1 Km long and bright focus": "1 किलोमीटर तक लंबा और चमकदार फोकस",
+  "55mm high-efficiency reflector": "55mm उच्च दक्षता वाला रिफ्लेक्टर",
+  "4V/4.5Ah High Power Battery": "4V/4.5Ah हाई पावर बैटरी",
+  "Compatible with 4W/6V Solar Panel": "4W/6V सोलर पैनल के साथ संगत",
+  "Wider 68mm reflector head": "अधिक चौड़ा 68mm रिफ्लेक्टर हेड",
+  "Heavy-duty 4V/7Ah high power battery": "हैवी-ड्यूटी 4V/7Ah हाई पावर बैटरी",
+  "Front Light High Mode Back-Up: 8-9 Hours": "सामने की लाइट हाई मोड बैकअप: 8-9 घंटे",
+  "Front Light Low Mode Back-up: 15-16 Hours": "सामने की लाइट लो मोड बैकअप: 15-16 घंटे",
+  "Side Emergency Light Back-up up to 10 Hours": "साइड इमरजेंसी लाइट का बैकअप 10 घंटे तक",
+  "Large 82mm high-dispersion reflector": "बड़ा 82mm हाई-डिस्पर्शन रिफ्लेक्टर",
+  "Ultra-durable 4V/7Ah high capacity battery": "अल्ट्रा-टिकाऊ 4V/7Ah उच्च क्षमता बैटरी",
+  "Front Light High: 8-9h / Low Mode: 15-16h Backup": "सामने की लाइट हाई: 8-9 घंटे / लो मोड: 15-16 घंटे बैकअप",
+  "Side Emergency Light Back-up: 9-10 Hours": "साइड इमरजेंसी लाइट बैकअप: 9-10 घंटे",
+  "Extreme 1.5 Km long and bright focus": "अत्यंत शक्तिशाली 1.5 किलोमीटर लंबा और चमकदार फोकस",
+  "Built-in USB port for Smartphone Charging": "स्मार्टफोन चार्जिंग के लिए इन-बिल्ट यूएसबी पोर्ट",
+  "80mm professional grade reflector": "80mm प्रोफेशनल ग्रेड रिफ्लेक्टर",
+  "Front Light High Mode: 6-7h / Low Mode: 12-13h Backup": "सामने की लाइट हाई मोड: 6-7 घंटे / लो मोड: 12-13 घंटे बैकअप",
+  "Side Emergency Light Back-up: 6-7 Hours": "साइड इमरजेंसी लाइट बैकअप: 6-7 घंटे",
+  "1 Km long focus with Blinking Mode safety feature": "ब्लिंकिंग मोड सुरक्षा सुविधा के साथ 1 किलोमीटर लंबा फोकस",
+  "Dual Switch for extra operational life": "अतिरिक्त कार्यशील जीवन के लिए डुअल स्विच",
+  "Full & Low battery automatic cut-off protection": "फुल और लो बैटरी स्वचालित कट-ऑफ सुरक्षा",
+  "80mm custom reflector bezel": "80mm कस्टम रिफ्नेक्टर बेज़ेल",
+  "6000 mAh high capacity rechargeable LiFePO4 battery": "6000 mAh उच्च क्षमता रिचार्जेबल LiFePO4 बैटरी",
+  "Front Light High Mode: 6-7h / Low Mode: 20-24h Backup": "सामने की लाइट हाई मोड: 6-7 घंटे / लो मोड: 20-24 घंटे बैकअप",
+  "Full and low battery auto cut-off circuit": "फुल और लो बैटरी ऑटो कट-ऑफ सर्किट",
+  "97mm ultra-wide reflector head": "97mm एक्स्ट्रा-वाइड रिफ्लेक्टर हेड",
+  "3.7V/7.8Ah High Capacity Lithium Battery": "3.7V/7.8Ah उच्च क्षमता लिथियम बैटरी",
+  "Extreme long range focus up to 2 Km": "2 किलोमीटर तक अत्यंत लंबी दूरी का फोकस",
+  "Massive 110mm heavy-duty reflector head": "विशाल 110mm हैवी-ड्यूटी रिफ्लेक्टर हेड",
+  "Lightweight ergonomics with professional grip": "प्रोफेशनल ग्रिप के साथ हल्का एर्गोनॉमिक डिज़ाइन",
+  "High capacity 4V/8Ah high power battery": "उच्च क्षमता 4V/8Ah हाई पावर बैटरी",
+  "1.5 Km long and bright focus with Blinking Mode": "ब्लिंकिंग मोड के साथ 1.5 किलोमीटर लंबा और चमकदार फोकस",
+  "Dual Switch for extra life & automated cut-off protection": "अतिरिक्त जीवन और स्वचालित कट-ऑफ सुरक्षा के लिए डुअल स्विच",
+  "Ribbed ultra-rugged construction with 110mm reflector": "110mm रिफ्लेक्टर के साथ रिब्ड अल्ट्रा-मजबूत बनावट",
+  "500 mAh built-in Lithium Battery": "500 mAh इन-बिल्ट लिथियम बैटरी",
+  "Telescopic zoom up to 300 Meters focus": "300 मीटर फोकस तक टेलीस्कोपिक ज़ूम",
+  "Up to 3 Hours continuous lighting backup": "3 घंटे तक निरंतर लाइटिंग बैकअप",
+  "Modern Type-C charging interface": "आधुनिक टाइप-सी चार्जिंग इंटरफ़ेस",
+  "Ideal for camping, security, farming, and power cuts": "कैंपिंग, सुरक्षा, खेती और बिजली कटौती के लिए आदर्श",
+  "Ultra-compact pocket design in high-finish Teal": "हाई-फिनिश टील (Teal) रंग में अल्ट्रा-कॉम्पैक्ट पॉकेट डिज़ाइन",
+  "500 mAh rechargeable Lithium Battery": "500 mAh रिचार्जेबल लिथियम बैटरी",
+  "Telescopic zoom and Type-C fast charging": "टेलीस्कोपिक ज़ूम और टाइप-सी फास्ट चार्जिंग",
+  "Up to 5 Hours continuous lighting backup": "5 घंटे तक निरंतर लाइटिंग बैकअप",
+  "Sleek cylindrical pastel design with grey accents": "ग्रे लहजे के साथ आकर्षक बेलनाकार पेस्टल डिज़ाइन",
+  "Flicker-free micro-LED illumination": "झिलमिलाहट-मुक्त माइक्रो-एलईडी रोशनी",
+  "1200 mAh High Capacity Lithium Battery": "1200 mAh उच्च क्षमता लिथियम बैटरी",
+  "Telescopic zoom with 200 Meters bright focus": "200 मीटर चमकदार फोकस के साथ टेलीस्कोपिक ज़ूम",
+  "5 Lighting modes: High, Low, Flashing, Side Light, Side Light Flashing": "5 लाइटिंग मोड: हाई, लो, फ्लैशिंग, साइड लाइट, साइड लाइट फ्लैशिंग",
+  "Unbreakable lightweight Aluminium body with waterproof switch": "वॉटरप्रूफ स्विच के साथ अटूट लाइटवेट एल्युमिनियम बॉडी",
+  "Type-C charging & sturdy orange utility ring clip": "टाइप-सी चार्जिंग और मजबूत ऑरेंज यूटिलिटी रिंग क्लिप",
+  "Telescopic zoom with up to 300 Meters focus range": "300 मीटर तक फोकस रेंज के साथ टेलीस्कोपिक ज़ूम",
+  "Rugged gunmetal grey aluminium body": "मजबूत गनमेटल ग्रे एल्युमिनियम बॉडी",
+  "Ideal for mining, farming, security, and outdoor camping": "खनन, खेती, सुरक्षा और आउटडोर कैंपिंग के लिए आदर्श",
+  "3.7V/1200 mAh Lithium Battery": "3.7V/1200 mAh लिथियम बैटरी",
+  "High Mode: 3-4 Hours / Low Mode: 7-8 Hours backup": "हाई मोड: 3-4 घंटे / लो मोड: 7-8 घंटे बैकअप",
+  "Telescopic zoom focus adjustment": "टेलीस्कोपिक ज़ूम फोकस समायोजन",
+  "Fully waterproof toggle switch": "पूरी तरह से वॉटरप्रूफ टॉगल स्विच",
+  "Ideal for mining, farming, and power outages": "खनन, खेती और बिजली कटौती के लिए आदर्श",
+  "3.7V/2200 mAh Lithium Battery with IP41 protection": "IP41 सुरक्षा के साथ 3.7V/2200 mAh लिथियम बैटरी",
+  "High Mode: 4-5 Hours / Low Mode: 10-11 Hours backup": "हाई मोड: 4-5 घंटे / लो मोड: 10-11 घंटे बैकअप",
+  "Up to 300 Meters focus range": "300 मीटर तक फोकस रेंज",
+  "Dual Charging: 5 Hours via Solar panel or 4 Hours via AC220V": "दोहरी चार्जिंग: सोलर पैनल द्वारा 5 घंटे या AC220V द्वारा 4 घंटे",
+  "IC Controlled overcharging and over-discharging protection": "आईसी नियंत्रित ओवरचार्जिंग और ओवर-डिस्चार्जिंग सुरक्षा",
+  "High power 3.7V/4000 mAh Lithium Battery": "हाई पावर 3.7V/4000 mAh लिथियम बैटरी",
+  "10W genuine high-dispersion CREE LED Reflector": "10W असली उच्च-वितरण क्री (CREE) एलईडी रिफ्लेक्टर",
+  "Focus reach up to 300 Meters": "फोकस दूरी 300 मीटर तक",
+  "Best-in-class comfort straps for mining & agricultural use": "खनन और कृषि उपयोग के लिए सबसे आरामदायक पट्टियाँ",
+  "3.7V/2200 mAh durable Lithium Battery": "3.7V/2200 mAh टिकाऊ लिथियम बैटरी",
+  "12 Pcs of High Brightness LEDs built into the chassis": "चेसिस में निर्मित 12 उच्च चमक वाली एलईडी",
+  "All types of smartphone charging via USB (500mA speed)": "यूएसबी के माध्यम से सभी प्रकार के स्मार्टफोन चार्जिंग (500mA गति)",
+  "Solar Charging: 6 Hours from panel, AC Charging: 4 Hours": "सोलर चार्जिंग: पैनल से 6 घंटे, एसी चार्जिंग: 4 घंटे",
+  "Overcharging and overdischarging protection circuit": "ओवरचार्जिंग और ओवरडिस्चार्जिंग सुरक्षा सर्किट",
+  "1 Year Warranty | India's No. 1 Solar Lighting Product": "1 साल की वारंटी | भारत का नंबर 1 सोलर लाइटिंग उत्पाद",
+  "High capacity 3.7V/4400 mAh Lithium Battery": "उच्च क्षमता 3.7V/4400 mAh लिथियम बैटरी",
+  "Two 3W high brightness rain-proof hanging bulbs included": "दो 3W उच्च चमक वाले रेन-प्रूफ लटकने वाले बल्ब शामिल",
+  "Smart USB port for charging all smartphones": "सभी स्मार्टफोन को चार्ज करने के लिए स्मार्ट यूएसबी पोर्ट",
+  "Solar Charging: 10 Hours from solar panel / Adapter: 7 Hours": "सोलर चार्जिंग: सोलर पैनल से 10 घंटे / एडाप्टर: 7 घंटे",
+  "High Quality IC-based controller with full overcharge protection": "पूर्ण ओवरचार्ज सुरक्षा के साथ उच्च गुणवत्ता वाला आईसी-आधारित कंट्रोलर",
+  "14/40 copper 2-core heavy-duty wiring (3.5mm OD)": "14/40 कॉपर 2-कोर हेवी-ड्यूटी वायरिंग (3.5mm बाहरी व्यास)",
+  "Heavy duty 3.7V/5200 mAh Lithium Battery": "हैवी ड्यूटी 3.7V/5200 mAh लिथियम बैटरी",
+  "Three 2W high brightness rain-proof hanging bulbs included": "तीन 2W उच्च चमक वाले रेन-प्रूफ लटकने वाले बल्ब शामिल",
+  "All types of smartphone charging by USB": "यूएसबी द्वारा सभी प्रकार के स्मार्टफोन चार्जिंग",
+  "Solar Charging: 6 Hours from 6W solar panel / Adapter: 8 Hours": "सोलर चार्जिंग: 6W सोलर पैनल से 6 घंटे / एडाप्टर: 8 घंटे",
+  "Overcharge and overdischarge electronic protection": "ओवरचार्ज और ओवरडिस्चार्ज इलेक्ट्रॉनिक सुरक्षा",
+  "Backup: 1 Bulb up to 15h, 2 Bulbs up to 8h, 3 Bulbs up to 6h": "बैकअप: 1 बल्ब 15 घंटे तक, 2 बल्ब 8 घंटे तक, 3 बल्ब 6 घंटे तक",
+  "Heavy-duty 6V 5Ah high power battery": "हैवी-ड्यूटी 6V 5Ah हाई पावर बैटरी",
+  "10 Pcs of 1W high efficacy 3030 SMD Epistar chip LEDs (3W total)": "1W उच्च प्रभावकारिता 3030 एसएमडी एपिस्टार चिप एलईडी के 10 पीस (कुल 3W)",
+  "High Mode: 9-10 Hours / Low Mode: 18-20 Hours backup": "हाई मोड: 9-10 घंटे / लो मोड: 18-20 घंटे बैकअप",
+  "Mobile charging USB out & fully IP41 protected structure": "मोबाइल चार्जिंग यूएसबी आउट और पूरी तरह से IP41 सुरक्षित बॉडी",
+  "AC Adaptor or Solar panel charging time: 10 Hours": "एसी एडाप्टर या सोलर पैनल चार्जिंग समय: 10 घंटे",
+  "4 Volt Battery Charger with status LED indicator": "स्टेटस एलईडी इंडिकेटर के साथ 4 वोल्ट बैटरी चार्जर",
+  "Wide Input range: 110-240V AC 50-60 Hz": "विस्तृत इनपुट रेंज: 110-240V AC 50-60 Hz",
+  "Output capacity: 5.5V DC 1 Amp": "आउटपुट क्षमता: 5.5V DC 1 एम्पीयर",
+  "Short Circuit & Overload auto-protection circuitry": "शॉर्ट सर्किट और ओवरलोड ऑटो-प्रोटेक्शन सर्किट",
+  "High efficiency SMPS system with very low idle energy draw": "बहुत कम निष्क्रिय ऊर्जा खपत के साथ उच्च दक्षता वाली एसएमपीएस प्रणाली",
+  "Superior robust housing with durable copper cabling": "टिकाऊ तांबे के तारों के साथ उत्कृष्ट मजबूत बॉडी",
+  "6 Volt Battery Charger with status LED indicator": "स्टेटस एलईडी इंडिकेटर के साथ 6 वोल्ट बैटरी चार्जर",
+  "Output capacity: 7.6V DC 1 Amp": "आउटपुट क्षमता: 7.6V DC 1 एम्पीयर",
+  "High efficiency & low standby energy consumption": "उच्च दक्षता और बहुत कम स्टैंडबाय ऊर्जा खपत",
+  "Manufactured in state-of-the-art facility in New Delhi": "नई दिल्ली में अत्याधुनिक विनिर्माण इकाई में निर्मित",
+  "Highly integrated robust SMPS power supply": "अत्यधिक एकीकृत मजबूत एसएमपीएस (SMPS) बिजली आपूर्ति",
+  "Input voltage threshold: 110-260V AC 50-60Hz": "इनपुट वोल्टेज सीमा: 110-260V AC 50-60Hz",
+  "Automated output short circuit shutdown protection": "स्वचालित आउटपुट शॉर्ट सर्किट शटडाउन सुरक्षा",
+  "Automated output overload & over-current protection": "स्वचालित आउटपुट ओवरलोड और ओवर-करंट सुरक्षा",
+  "Premium heat-safe casing with continuous power flow": "निरंतर बिजली प्रवाह के साथ प्रीमियम हीट-सेफ केसिंग",
+  "Specially designed for agricultural Jhatka Fencing Machines": "कृषि झटका फेंसिंग मशीनों के लिए विशेष रूप से डिज़ाइन किया गया",
+  "Input voltage safety range: 110-260V AC 50-60Hz": "इनपुट वोल्टेज सुरक्षा सीमा: 110-260V AC 50-60Hz",
+  "Built-in Reverse Polarity electronic protection": "इन-बिल्ट रिवर्स पोलैरिटी इलेक्ट्रॉनिक सुरक्षा",
+  "Output short circuit & current surge protection": "आउटपुट शॉर्ट सर्किट और करंट सर्ज सुरक्षा",
+  "Rugged heavy-duty dual pin standard socket plugs": "मजबूत हेवी-ड्यूटी डुअल पिन मानक सॉकेट प्लग",
+  "Equipped with heavy-duty red & black alligator Chimti clips": "मजबूत लाल और काले एलीगेटर चिमटी क्लिप से लैस",
+  "Advanced reverse polarity clamp protection": "उन्नत रिवर्स पोलैरिटी क्लैंप सुरक्षा",
+  "Output short circuit protection with status indicators": "स्टेटस इंडिकेटर्स के साथ आउटपुट शॉर्ट सर्किट सुरक्षा",
+  "Heavy gauge copper clamps for solid contact surface": "मजबूत संपर्क सतह के लिए भारी गेज तांबे के क्लैंप",
+  "High-power CREE LED spotlight with premium amber collar": "प्रीमियम एम्बर कॉलर के साथ हाई-पावर क्री (CREE) एलईडी स्पॉटलाइट",
+  "Dynamic telescopic focus bezel with orange accent": "ऑरेंज एक्सेंट के साथ डायनेमिक टेलीस्कोपिक फोकस बेज़ेल",
+  "Heavy-duty LiFePO4 battery integration": "हैवी-ड्यूटी LiFePO4 बैटरी एकीकरण",
+  "Coming Soon in Q3 2026 - Registered Dealer priority": "2026 की तीसरी तिमाही में आ रहा है - पंजीकृत डीलरों को प्राथमिकता",
+  "Sleek silver metallic frame with high-efficiency side light bar": "उच्च दक्षता वाली साइड लाइट बार के साथ सुरुचिपूर्ण सिल्वर मेटैलिक फ्रेम",
+  "Double light source with zoom spotlight + ambient lantern mode": "ज़ूम स्पॉटलाइट + एम्बिएंट लालटेन मोड के साथ दोहरा प्रकाश स्रोत",
+  "Fast Type-C rechargeable smart circuit board": "तेज़ टाइप-सी रिचार्जेबल स्मार्ट सर्किट बोर्ड",
+  "Flat pocket design in high-visibility Solar Yellow": "उच्च-दृश्यता वाले सोलर पीले रंग में फ्लैट पॉकेट डिज़ाइन",
+  "Multi-core SMD LED array for flood lighting": "फ्लड लाइटिंग के लिए मल्टी-कोर एसएमडी एलईडी ऐरे",
+  "Magnetic base + sturdy utility hanger hook": "चुंबकीय आधार + मजबूत यूटिलिटी हैंगर हुक",
+  "Tactical rubberized black body with orange power switch": "नारंगी पावर स्विच के साथ मजबूत रबरयुक्त ब्लैक बॉडी",
+  "Dual core zoom lens + ultra-wide COB side light board": "डुअल कोर ज़ूम लेंस + एक्स्ट्रा-वाइड सीओबी (COB) साइड लाइट बोर्ड",
+  "Heavy-duty utility clip and USB charging port": "हैवी-ड्यूटी यूटिलिटी क्लिप और यूएसबी चार्जिंग पोर्ट",
+  "Indestructible knurled aircraft-grade aluminium alloy body": "अटूट नर्ल्ड एयरक्राफ्ट-ग्रेड एल्युमिनियम मिश्र धातु बॉडी",
+  "Extreme throw focus projector with dual switch mode": "डुअल स्विच मोड के साथ चरम थ्रो फोकस प्रोजेक्टर",
+  "Waterproof, shockproof design with crenellated bezel": "क्रेनलेटेड बेज़ेल के साथ वॉटरप्रूफ, शॉकप्रूफ डिज़ाइन",
+  "Wearable lightweight design with secondary side stick COB LED": "द्वितीयक साइड स्टिक सीओबी एलईडी के साथ पहनने योग्य हल्का डिज़ाइन",
+  "High-power zoom spotlight for precise distance lighting": "सटीक दूरी की लाइटिंग के लिए हाई-पावर ज़ूम स्पॉटलाइट",
+  "Ideal for industrial mining, underground repair & farming": "औद्योगिक खनन, भूमिगत मरम्मत और खेती के लिए आदर्श"
 };
 
 function translateProductText(text: string): string {
@@ -877,7 +1466,8 @@ function renderFilterTabs(activeCategory: string = "All") {
     "Tubes",
     "Fans",
     "Street Lights",
-    "Inverters"
+    "Inverters",
+    "Chargers"
   ];
 
   filterButtonsContainer.innerHTML = categories.map((cat) => {
@@ -936,13 +1526,20 @@ function renderProducts(categoryFilter: string) {
     const translatedCategory = translateProductText(product.category);
     
     // Localized Enquiry prefill text
-    const prefillText = currentLang === "en" 
-      ? `Hi, I am interested in GEE-LITE ${product.name} (${product.model}). Please share specifications and pricing.`
-      : `नमस्ते, मैं GEE-LITE ${translatedName} (${product.model}) में रुचि रखता हूँ। कृपया इसके बारे में जानकारी और मूल्य साझा करें।`;
+    const prefillText = product.isComingSoon
+      ? (currentLang === "en" 
+          ? `Hi, I am interested in the upcoming GEE-LITE ${product.name} (${product.model}). Please notify me when it becomes available.`
+          : `नमस्ते, मैं आने वाले GEE-LITE ${translatedName} (${product.model}) में रुचि रखता हूँ। कृपया इसके उपलब्ध होने पर सूचित करें।`)
+      : (currentLang === "en"
+          ? `Hi, I am interested in GEE-LITE ${product.name} (${product.model}). Please share specifications and pricing.`
+          : `नमस्ते, मैं GEE-LITE ${translatedName} (${product.model}) में रुचि रखता हूँ। कृपया इसके बारे में जानकारी और मूल्य साझा करें।`);
     
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(prefillText)}`;
     const badgeText = currentLang === "en" ? "New Model" : "नया मॉडल";
-    const whatsappBtnText = currentLang === "en" ? "Enquire on WhatsApp" : "व्हाट्सएप पर पूछताछ करें";
+    const comingSoonBadgeText = currentLang === "en" ? "Coming Soon" : "जल्द आ रहा है";
+    const whatsappBtnText = product.isComingSoon 
+      ? (currentLang === "en" ? "Register Interest" : "रुचि दर्ज करें")
+      : (currentLang === "en" ? "Enquire on WhatsApp" : "व्हाट्सएप पर पूछताछ करें");
 
     return `
       <article 
@@ -963,11 +1560,15 @@ function renderProducts(categoryFilter: string) {
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
             />
           </picture>
-          ${product.isNew ? `
+          ${product.isComingSoon ? `
+            <span class="absolute top-3 left-3 bg-solar-amber text-navy text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
+              ${comingSoonBadgeText}
+            </span>
+          ` : (product.isNew ? `
             <span class="absolute top-3 left-3 bg-signal-red text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider shadow-sm">
               ${badgeText}
             </span>
-          ` : ""}
+          ` : "")}
           <span class="absolute top-3 right-3 bg-navy/90 text-white text-[10px] font-medium px-2 py-0.5 rounded-md">
             ${product.model}
           </span>
