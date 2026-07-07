@@ -659,6 +659,11 @@ const PRODUCTS: Product[] = [
   }
 ];
 
+// Override all images to use the test image as requested by the user
+PRODUCTS.forEach(p => {
+  p.image = "/images/products/solar_light.png";
+});
+
 // ---------------------------------------------------------
 // 2. Dual-Language Manual Translation Engine (EN/HI)
 // ---------------------------------------------------------
